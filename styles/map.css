@@ -1,0 +1,126 @@
+:root {
+    --color-brand--1: #ffb545;
+    --color-brand--2: #00c46a;
+
+    --color-dark--1: #2d3439;
+    --color-dark--2: #42484d;
+    --color-dark--3: #1b4d3e;
+    --color-light--1: #aaa;
+    --color-light--2: #ececec;
+    --color-light--3: #rgb(214, 222, 224);
+}
+
+#wrapper-tree-inventory {
+    height: 1000px;
+    width: 99%;
+    margin: 0 auto 30px auto;
+    padding: 0 40px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1.5fr 1fr 1fr;
+    grid-template-areas: 
+      "header"
+      "app"
+      "app"
+      "app";
+    border-radius: 10px;
+}
+
+.tree-inventory-instructions {
+    grid-area: header;
+    color: black;
+}
+
+.wrapper-tree-inventory-app {
+    grid-area: app;
+    display: grid;
+    grid-template-columns: 1.3fr 0.6fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "sidebar map map map";
+    column-gap: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #648c5d;
+}
+
+.tree-inventory {
+    width: 100%;
+    grid-area: sidebar;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    overflow: scroll;
+
+}
+
+.tree-inventory-heading {
+    padding-top: 0;
+    margin: 0 auto .75rem auto;
+}
+
+.inventory-items{
+    list-style: none;
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: #1b4d3e;
+    font-size: 1.2rem;
+}
+
+.form input, select{
+    font-size: 1.2rem;
+}
+
+.inventory-item {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: #1b4d3e;
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+
+.item__title {
+    grid-area: heading;
+}
+
+.item__details {
+    display: flex;
+    grid-area: info;
+    margin: 5px;
+}
+
+.inventory-item h2{
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    grid-area: map;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+    background-color: var(--color-dark--3);
+    color: var(--color-light--2);
+    border-radius: 5px;
+    padding-right: 0.6rem;
+}
+
+.running-popup .leaflet-popup-content-wrapper {
+    border-left: 5px solid var(--color-light--2);
+}

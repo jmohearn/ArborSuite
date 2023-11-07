@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--app {
+    grid-template-columns: .75fr 1.25fr;
+}
+
+.app--container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #7EBE1D;
+    height: 40rem;
+    width: 20rem;
+    border-radius: 2rem;
+    font-family: 'Zilla Slab', serif;
+}
+
+.input--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #5C7CFA;
+    color: #a6e1fa;
+    margin: 0.5rem;
+    height: 26rem;
+    border-radius: 2rem;
+}
+
+.title--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.input--container h1 {
+    font-size: 2.5rem;
+    color: #00072d;
+}
+
+.input--container label {
+    font-size: 1.5rem;
+    color: #001c55;
+}
+
+.input--container input {
+    font-size: 1rem;
+    width: 8rem;
+}
+
+.input--container button {
+    border: none;
+    border-radius: 0.5rem;
+    color: #001C55;
+    font-size: 1.5rem;
+    background-color: #a6e1fa;
+    cursor: pointer;
+    font-family: 'Zilla Slab', serif;
+}
+
+.input--container button:hover,
+.input--container button:active {
+    background-color: #95cbe1;
+}
+
+
+.output--container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C7CFA;
+    color: #a6e1fa;
+    margin: 0.5rem;
+    height: 12rem;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.output--container .output--title {
+    font-size: 2rem;
+    color: #001c55;
+}
+
+.output--container #rainfall--volume {
+    font-size: 2rem;
+}
+
+.output--container button {
+    border: none;
+    border-radius: 0.5rem;
+    color: #001C55;
+    font-size: 1rem;
+    background-color: #a6e1fa;
+    cursor: pointer;
+    font-family: 'Zilla Slab', serif;
+}
+
+.output--container button:hover,
+.output--container button:active {
+    background-color: #95cbe1;
+}
+
+.right--col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1;
+}
+
+.about--title {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.faq {
+    border: 2px solid #7EBE1D;
+    background-color: #5C7CFA;
+    color:#001C55;
+    border-radius: 1rem;
+    height: 2.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    overflow: hidden;
+    font-family: 'Zilla Slab', serif;
+}
+
+.faq p {
+    padding: 0.5rem;
+    color: #95cbe1;
+    font-size: 1.5rem;
+}
+
+.faq.active {
+    height: 17rem;
+    overflow-y: scroll;
+}
+
+@media (max-width: 820px) {
+    .faq--big {
+    height: 4rem;
+}
+}
+
+@media (max-width: 718px) {
+    .faq--bigone {
+    height: 4rem;
+}
+}

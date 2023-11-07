@@ -1,0 +1,182 @@
+#main--content {
+    height: auto;
+    margin: auto;
+    max-width: 80vw;
+}
+
+#calculators {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 4rem;
+    margin: 4rem auto 4rem auto;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: button;
+}
+
+.calc-btn {
+    width: 25rem;
+    height: 6rem;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+    background-color: #1b4d3e;
+    border: none;
+    color: white;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.calc-btn:hover {
+    transform:translateX(30px);
+}
+
+.card {
+    border-width: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    min-width: 250px;
+    font-family: 'Merriweather', sans-serif;
+    transition: transform ease 300ms;
+}
+
+.card img {
+    max-height: auto;
+    max-width: 100%;
+}
+
+.card h2 {
+    margin: 1rem;
+}
+
+.card p {
+    margin: 1rem;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translate(0, -2rem);
+ }
+
+ .tree-inventory-link {
+    text-decoration: none;
+    color: black;
+ }
+
+ .card2 {
+    border-width: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    height: 100%;
+    width: auto;
+    max-width: 350px;
+    min-width: 250px;
+    font-family: 'Merriweather', sans-serif;
+    transition: transform ease 300ms;
+}
+
+.tree-inventory-link {
+    height: auto;
+}
+
+.card2 img {
+    max-height: auto;
+    max-width: 100%;
+}
+
+.card2 h2 {
+    margin: 1rem;
+}
+
+.card2 p {
+    margin: 1rem;
+}
+
+.card2:hover{
+    cursor: pointer;
+    transform: translate(0, -2rem);
+ }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);;
+}
+
+
+.app {
+    border-width: 2px;
+    border-style: solid;
+    height: auto;
+    width: auto;
+    max-width: 600px;
+    padding: 1.5rem;
+    margin: 1rem auto 1rem auto;
+    font-family: 'Merriweather', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.app h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.app h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.app input[type = text] {
+    font-size: 1.5rem;
+}
+
+.app label {
+    font-size: 1.5rem;
+}
+
+.app button {
+    background-color: #1b4d3e;
+    color: white;
+    border: none;
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.close-app-btn {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 85%;
+    cursor: pointer;
+}
+
+.off {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .calculators {
+    flex-direction: column;
+    align-items: center;
+  }
+}
