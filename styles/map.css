@@ -40,7 +40,6 @@
       "sidebar map map map";
     column-gap: 10px;
     border-radius: 15px;
-    padding: 15px;
     background-color: #648c5d;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .tree-inventory-heading {
-    padding-top: 0;
+    padding-top: 1rem;
     margin: 0 auto .75rem auto;
 }
 
@@ -110,7 +109,7 @@
 #map {
     grid-area: map;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     
 }
 
@@ -124,3 +123,30 @@
 .running-popup .leaflet-popup-content-wrapper {
     border-left: 5px solid var(--color-light--2);
 }
+
+@media screen and (max-width: 850px) {
+    .wrapper-tree-inventory-app {
+        grid-area: app;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.25fr 2.75fr;
+        grid-template-areas: 
+          "sidebar"
+          "map";
+        column-gap: 10px;
+        border-radius: 15px;
+        background-color: #648c5d;
+    }
+
+
+    #wrapper-tree-inventory {
+        height: 1500px;
+    }
+
+    #map {
+        grid-area: map;
+        height: 100%;
+        border-radius: 0 0 10px 10px;
+        
+    }
+  }
