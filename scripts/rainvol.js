@@ -40,7 +40,8 @@ function calcVol () {
         let rainVolCuIn = (area * rainFall);
         let rainGal = Math.round(rainVolCuIn / 231);
         console.log(rainGal);
-        rainOutput.innerHTML = `${rainGal} gals`;
+        rainOutput.textContent = `${rainGal} gals`;
+        rainOutput2.textContent = `${rainGal} gals`;
     }else if (buttonStatus === false) {
         let area = convertArea();
         let rainFall = rainInput.value;

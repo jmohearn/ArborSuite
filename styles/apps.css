@@ -121,11 +121,12 @@
     border-style: solid;
     height: auto;
     width: auto;
-    max-width: 600px;
-    padding: 1.5rem;
-    margin: 1rem auto 1rem auto;
+    width: 400px;
+    min-width: 300px;
+    padding: .75rem;
+    // margin: 1rem auto 1rem auto;
     font-family: 'Merriweather', sans-serif;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -136,36 +137,36 @@
 }
 
 .app h2 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .app h3 {
-    font-size: 1.5rem;
-    padding: 1rem 0 1.5rem 0;
+    font-size: 1rem;
+    padding: .75rem 0 .75rem 0;
 }
 
 .app input[type = text] {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .app label {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .app button {
     background-color: #1b4d3e;
     color: white;
     border: none;
-    padding: .5rem;
-    font-size: 2rem;
+    padding: .3rem;
+    font-size: 1.5rem;
     border-radius: 15px;
     font-family: 'Merriweather', sans-serif;
 }
 
 .close-app-btn {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin-left: 85%;
     cursor: pointer;
 }
@@ -180,3 +181,16 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 450px) {
+    .calculators {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app h3 {
+    font-size: 1rem;
+    padding: .5rem 0 .5rem 0;
+    
+}
+  }
